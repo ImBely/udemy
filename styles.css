@@ -1,52 +1,94 @@
-body{
-    margin: 0; /*to delete the standards properties of the web so our navbar and our anchor tags are in the same dimensions not adding extra space ok*/
+ * {
+    margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #16161a;
+    box-sizing: inherit;
 }
 
-.navbar{
-    background-color: #242629;
-    padding: 10px; /*space up and down*/
-    text-align: right;
-   /*color: #94a1b2; /*didnt change the color. why? bc when inspect there is a property already standard so we shoul make sure to create another propertie */
+body {
+    box-sizing: border-box; /*This means that when specifying the width or height of elements inside the <body>, the padding and border will be included in those dimensions. */
 }
 
-.navbar > a {
-    color: #94a1b2;
-    text-decoration: none;
-    padding: 0 10px; /*0 xq ya navbar tiene un espaciado de arriba*/
-}
-
-section h2 {
-    text-align: center;  
-    color: #fffffe ;
-}
-
-section{
-    padding: 10px;
-    max-width: 1200px;
-    margin:0 auto; /*como es grid no podemos usar justify content center so we use margin auto to center the things.*/
-}
-
-.portfolio-grid{
+.container-grid {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(3, 1fr);
-    color:#94a1b2;
-    gap: 10px;
-    justify-items: center; /*En display grid no existe el justify content, hay que usar justify items*/
+    grid-gap: 1rem;
+    grid-template-columns: repeat(1, 1fr); /* Define your desired number of columns, ancho 1 fraccion. */
 }
 
-.portfolio-item{
-    height: 150px;
-    width: 175px;
-    background-color: #fffffe;
-    padding: 10px;
+.grid-item {
+    border-radius: 5px;
+    overflow: hidden;
 }
 
-.portfolio-item:nth-child(even) {
-    background-color: transparent;
-    border: 2px solid #94a1b2;
-    color: #c5c6c7;
+.grid-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
+/* Specify the size for each grid item */
+.item1 {
+    grid-row: span 2; /* Takes up 2 rows */
+    grid-column: span 10; /* Takes up 1 column*/
+}
+
+.item2 {
+    grid-row: span 6; /* Takes up 1 row */
+    grid-column: span 4; /* Takes up 2 columns */
+}
+
+.item3 {
+    grid-row: span 1; /* Takes up 2 rows */
+    grid-column: span 4; /* Takes up 2 columns */
+}
+
+.item4 {
+    grid-row: span 1; /* Takes up 2 rows */
+    grid-column: span 6; /* Takes up 2 columns */
+}
+.item5 {
+    grid-row: span 5; /* Takes up 2 rows */
+    grid-column: span 4; /* Takes up 2 columns */
+}
+.item6 {
+    grid-row: span 2; /* Takes up 2 rows */
+    grid-column: span 2; /* Takes up 2 columns */
+}
+.item7 {
+    grid-row: span 2; /* Takes up 2 rows */
+    grid-column: span 4; /* Takes up 2 columns */
+}
+.item8 {
+    grid-row: span 3; /* Takes up 2 rows */
+    grid-column: span 8; /* Takes up 2 columns */
+}
+.item9 {
+    grid-row: span 1; /* Takes up 2 rows */
+    grid-column: span 2; /* Takes up 2 columns */
+}
+.item10 {
+    grid-row: span 2; /* Takes up 2 rows */
+    grid-column: span 2; /* Takes up 2 columns */
+}
+.item11 {
+    grid-row: span 9; /* Takes up 2 rows */
+    grid-column: span 6; /* Takes up 2 columns */
+}
+.item12 {
+    grid-row: span 7; /* Takes up 2 rows */
+    grid-column: span 10; /* Takes up 2 columns */
+}
+.item13 {
+    grid-row: span 6; /* Takes up 2 rows */
+    grid-column: span 8; /* Takes up 2 columns */
+}
+.item14 {
+    grid-row: span 2; /* Takes up 2 rows */
+    grid-column: span 24; /* Takes up 2 columns */
+}
+
+
