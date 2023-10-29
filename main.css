@@ -1,0 +1,41 @@
+body.sigin-body{
+background-color: #e6f2ff;
+}
+
+.container.signin-container{
+    margin-top: 15%;
+}
+
+.card-body.signin-card{
+    padding: 40px 0px 20px;
+    background-color: #f4f4f4;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5); /*en rgba 'a' is opacity*/
+    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, .5); /*Para que trabaje ne otros navegadores como chrome y safari*/
+    -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, .5); /*Para que trabaje en mozilla firefox*/
+}
+
+img.signin-img{ /*Esto es para que quede saparado de la card donde  va la img*/
+    padding: 0 2rem 2rem; /*First one target the top, right left, and bottom. Also, 2rem,it means twice the main text size. If the main text is 16px then it would be 32px. Rem allow us to adjust the text, unlike px that stays always the same */
+    margin: auto; /*Agarra todo el espacio que hay fuera de nuestor elemento y lo centra, esos lados los distribuye */
+    display: block; /*para q nuestra img se ajuste front of all*/
+    width: 50%; /*Cambiar tamaño del logo, but also a good practice is to resize the image to the dimensions of inspector (which is 280*175 aproximately)*/
+}
+
+form.sigin-form{
+    max-width: 350px;
+    margin: auto;
+}
+
+button.signin-btn {
+    color: #ffffff;
+    background-color: pink;
+    width: 100%;
+    margin-bottom: 1.2rem;
+}
+
+a.create-new-account{
+    font-size: 1.2rem;
+    text-align: center;
+    display: block; /*This make the object move.*/
+    margin-top: 15px; 
+}

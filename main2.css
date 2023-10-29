@@ -1,0 +1,87 @@
+.jumbotron {
+        color: #181818;
+        text-align: center;
+        background: none ;
+}
+
+.carousel-caption {
+        color: white;
+        text-align: center;
+}
+
+h5{
+        color: #fbdd74;
+}
+
+.sectionClara {
+        background-color: #f6efef;
+        padding: 2em;
+}
+
+.sectionOscura {
+        background-color: #4fc4cf;
+        padding: 2rem; /*Se adapta al diseño responsivo, 1 rem son 16px. This is because nowadays, screen sizes come in different sizes and shapes. If we use px , the element's size remains constant regardless of the size of the screen*/
+}
+
+.stuffWrapper {
+       margin-top: 20px; 
+       
+}
+
+button.stuffWrapperBtn {
+        background-color: #fbdd74;
+        color: #181818;
+        display: block;
+        margin: auto;
+}
+
+h1.modal-title{
+    margin: auto;
+}
+
+.modalFormWrapper{
+    padding: 2rem;
+}
+
+.imgCenter{
+    display: block;
+    margin: auto;
+}
+
+.btnCenter{
+    display: block;
+    margin: auto;
+    background-color: #fbdd74;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.size {
+width: 50%;
+}
+
+footer{
+background-color: PINK;
+}
+
+.footerImg {
+padding: 20px;
+}
+
+i{
+color: white;
+margin: 10px;
+}
+
+footer{
+background-color: #181818;     
+}
+
+.socialWrapper{
+margin: auto;
+}
+
+.socialWrapper a{
+text-decoration: none;
+}

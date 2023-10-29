@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en"
+>
+  <head>
+    <!--Meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <!-- CSS-->
+    <link rel="stylesheet" href="main2.css">
+  </head>
+
+  <body>
+    <div>
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">D&S</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <!--This is the dropdown menu-->
+          <span class="navbar-toggler-icon"></span> <!--Barritas Icon desplegable-->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Levels</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Join our Club
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                <li><a class="dropdown-item" href="#">Schedule a Class</a></li>
+                <li><a class="dropdown-item" href="#">Payment Methods</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="sectionClara">
+      <div class="row">
+        <div class="col-sm-12"> <!--we want a small col of 12 On any viewport that is small and larger -->
+          <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Discover and Speak</h1> <!--display-4 es el tamaño de la letra-->
+              <p class="lead">Improve your language skills with us</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--we create a new row-->
+      <div class="row">
+        <div class="col"></div> <!--this column will take up the any extra column width and space evenly, so it will be 3-->
+        <div class="col-sm-12 col-md-6"> <!--en dispositivos pequeños se pondra de tamaño 12 en vez de 6-->
+          <div id="mainCarousel" class="carousel slide">
+            <div class="carousel-inner"> <!--our images are here-->
+              <div class="carousel-item active">
+                <img src="explore.png" class="d-block w-100" alt="first slide"> <!--d-block means display block, it make sure its aligned in the center-->
+                <div class="carousel-caption d-none d-md-block">
+                  <!--<h5>Begginer Course</h5>
+                  <p>Test your vocabulary and listening skills.</p>-->
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="team.png" class="d-block w-100" alt="second slide">
+                <div class="carousel-caption d-none d-md-block"> <!--d-none d-md-block means this text on any display that is medium or larger, will display this text in a block, however if its smaller then will be set as a none. Ejemplo, en los tlfs va a desaparecer -->
+                   <!--<h5>Intermediate Level</h5>
+                  <p>Conversational phase.</p>-->
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="growing.png" class="d-block w-100" alt="third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <!-- <h5>Profficient Level</h5>
+                  <p>Some representative placeholder content for the first slide.</p>-->
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+        <div class="col"></div> <!--it will be 3. So when the viewport is like a mobile, or small, this columns will collapse -->
+      
+      </div>
+    </div>
+    <!--Section Two-->
+    <div class="sectionOscura">
+
+      <!--Primera columna la parte de la foto-->
+        <div class="row">
+          <div class="col-sm-12 col-md-1 offset-md-2"> <!--were saying here we've got column width of three (in the medium md screen) the md-1 is the img vertical donde iba la patineta and the offset md 2 were saying add 2 spaces emptys to the left of my patineta img so the OFFSET WHAT DOES IS ADD SPACE TO THE LEFT SIDE OF THE COL YOU WANTO TO WORK WITH-->
+              <img class="img-fluid" src="female.png">
+          </div>
+
+      <!--Segunda columna, parte del  texto con la imagen en la esquinita-->
+        <div class="col-sm-12 col-md-6">
+          <div class="row">
+            <div class="col-sm-12"> <!--Para que el texto a colocar aparezca en oda la grilla. When add a new row inside of col, youre ressetting the grid system and have a full screen of 12 to work with-->
+              <p>Join us as we explore the diverse world of languages and discover something new every day. Whether you're a language enthusiast or simply curious about different cultures, our blog offers a platform to connect, learn and grow together.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-9"> <!--Este es el muñequito-->
+              <p>Our club offers opportunities to practice both Spanish and English with native speakers in a fun, consistent and unorthodox way. Fluent speaking comes from consistent practice, and we’ll explain how to integrate spoken language into your daily life to improve your Spanish conversation skills.</p>
+            </div>
+            
+            <div class="col-sm-12 col-md-3"> <!--9+3=12 so were going to fill up the full width of 12 with this col-md-3-->
+              <img class="img-fluid" src="male.png"> <!--the img fluid is in order to our img can scale appropiately as our viewport change.-->
+            </div>
+          </div>
+        </div> 
+        <div class="col"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="stuffWrapper">
+            <button type="button" class="btn btn-lg stuffWrapperBtn" data-bs-toggle="modal" data-bs-target="#coolModal">Schedule with us</button> <!--Remember, data target the id below in our modal para q el pop up happen-->          
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!--Section Light -->
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="row">
+              <!--12/3 es 4, so 4 cols but in tlf we want all the full screen-->
+              <div class="col-sm-12 col-lg-4">
+                <img class="img-fluid imgCenter" src="female.png">
+                  <div class="row">
+                    <div class="col-sm-12">
+                     <button type="button" class="btn btn-lg  btnCenter">Press here</button>    
+                    </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-lg-4">
+                <img class="img-fluid imgCenter" src="female.png">
+                  <div class="row">
+                    <div class="col-sm-12">
+                     <button type="button" class="btn btn-lg  btnCenter">Press here</button>    
+                    </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-lg-4">
+                <img class="img-fluid imgCenter" src="female.png">
+                  <div class="row">
+                    <div class="col-sm-12">
+                     <button type="button" class="btn btn-lg  btnCenter">Press here</button>    
+                    </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="coolModal" tabindex="-1" aria-labelledby="coolModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5"  id="coolModalLabel">Schedule a class here</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <img class="img-fluid" src="Logo DiscoverAndSpeak.png">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="modalFormWrapper">
+                      <div class="mb-3">
+                        <label for="formName" class="form-label">Whats your name?</label>
+                        <input type="email" class="form-control" id="formName" placeholder="Name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="formEmail" class="form-label">Where should we send our club information?</label>
+                        <textarea class="form-control" id="formEmail" placeholder="Email" rows="1"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--Meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- CSS-->
+    <link rel="stylesheet" href="main2.css">
+
+    <!--icon-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  
+
+  </head>
+  <body>
+    <div>
+      <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">D&S</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> 
+              <span class="navbar-toggler-icon"></span> 
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Levels</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Join our Club
+                      </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                      <li><a class="dropdown-item" href="#">Schedule a Class</a></li>
+                      <li><a class="dropdown-item" href="#">Payment Methods</a></li>
+                    </ul>
+                    </li>
+                  </ul>
+                </div>
+        </div> 
+      </nav>
+
+    <div class="sectionClara">
+      <div class="row">
+        <div class="col-sm-12"> 
+          <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Discover and Speak</h1> <!--display-4 es el tamaño de la letra-->
+              <p class="lead">Improve your language skills with us</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col"></div> <!--will take extra column width and space evenly, so it will be 3-->
+        <div class="col-sm-12 col-md-6"> <!--en disp pequeños se pondra de tamaño 12 en vez de 6-->
+          <div id="mainCarousel" class="carousel slide">
+            <div class="carousel-inner"> <!--our images are here-->
+              <div class="carousel-item active">
+                <img src="exploring.png" class="d-block w-100" alt="first slide"> <!--d-block means display block (align in the center)-->
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="women.png" class="d-block w-100" alt="second slide">
+                <div class="carousel-caption d-none d-md-block"> 
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="social-media-users.png" class="d-block w-100" alt="third slide">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col"></div> <!--will be 3.If viewport is a mobile this columns will collapse -->
+      </div>
+    </div>
+    <!--Section Two-->
+    <div class="sectionOscura">
+        <div class="row">
+          <div class="col-sm-12 col-md-1 offset-md-2"> 
+              <img class="img-fluid" src="character.png">
+          </div>
+        <div class="col-sm-12 col-md-6"><!--Segunda columna, parte del  texto con la imagen en la esquinita-->
+          <div class="row">
+            <div class="col-sm-12"> 
+              <p>Join us as we explore the diverse world of languages and discover something new every day. Whether you're a language enthusiast or simply curious about different cultures, D&S offers a platform to connect, learn and grow together.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-9"> <!--Este es el muñequito-->
+              <p>Our club offers opportunities to practice both Spanish and English with native speakers. Fluent speaking comes from consistent practice, and we will explain how to integrate spoken language into your daily life to improve your Spanish conversation skills. Space is limited, ask for more information to reserve a class and explore the possibility of joining our language club.</p>
+            </div>
+            <div class="col-sm-12 col-md-3"> <!--9+3=12 so were going to fill up the full width of 12 with this col-md-3-->
+              <img class="img-fluid" src="character (1).png"> <!--img fluid to our img can scale appropiately as our viewport change.-->
+            </div>
+          </div>
+        </div> 
+        <div class="col"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="stuffWrapper">
+            <button type="button" class="btn btn-lg stuffWrapperBtn" data-bs-toggle="modal" data-bs-target="#coolStuffModal">Schedule with us</button> <!--Remember, data target the id below in our modal para q el pop up happen-->          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sectionClara">
+      <div class="col-sm-12">
+        <div class="row">
+          <!--12/3 es 4, so 4 cols but in tlf we want all the full screen-->
+          <div class="col-sm-12 col-lg-4">
+            <img class="img-fluid imgCenter" src="begginer-transformed (1).png">
+              <div class="row">
+                <div class="col-sm-12">
+                 <button type="button" class="btn btn-lg  btnCenter" data-bs-toggle="modal" data-bs-target="#kickFlipModal">Begginer</button>    
+                </div> <!--data-target="." los puntos para los id-->
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-4">
+            <img class="img-fluid imgCenter" src="intermediate-transformed (1).png">
+              <div class="row">
+                <div class="col-sm-12">
+                 <button type="button" class="btn btn-lg  btnCenter" data-bs-toggle="modal" data-bs-target="#kickFlipModal2">Intermediate</button>    
+                </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-4">
+            <img class="img-fluid imgCenter" src="difficult.png">
+              <div class="row">
+                <div class="col-sm-12">
+                 <button type="button" class="btn btn-lg  btnCenter" data-bs-toggle="modal" data-bs-target="#kickFlipModal3">Advanced</button>    
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  
+
+     
+<!-- Modal -->
+<!--Cool Stuff Modal, to know which modal is assigned to which button-->
+  <div class="modal fade" id="coolStuffModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="coolStuffModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="coolStuffModalLabel">Join us</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <img class="img-fluid" src="Logo DiscoverAndSpeak.png">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="modalFormWrapper">
+                  <div class="mb-3">
+                    <label for="formName" class="form-label">Whats your name?</label>
+                    <input type="email" class="form-control" id="formName" placeholder="Name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formEmail" class="form-label">Where should we send our club information?</label>
+                    <textarea class="form-control" id="formEmail" placeholder="Email" rows="1"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--KICKFLIP MODAL-->
+  <div class="modal fade" id="kickFlipModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="kickFlipModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel"> Begginer Level</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Are you ready to get started with the basics of Spanish? Beginners will start with:
+          <ul>
+            <li>Fundamental words and phrases for everyday communication.</li>
+            <li>Form basics sentences to introduce themselves, ask simple questions, and engage in basic conversations.</li>
+            <li>Fun activities might include vocabulary games, flashcards, and simple dialogues.</li>
+          </ul>   
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="kickFlipModal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="kickFlipModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel"> Intermediate Level</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>A more extensive vocabulary, including more specific nouns, verbs, and adjectives related to daily life and common topics of interest.</li>
+            <li>More complex sentences and engage in longer conversations. They'll also learn to express opinions, preferences, and desires.</li>
+            <li>Activities can involve reading and discussing short texts, watching and discussing videos or films, and engaging in role-playing exercises.</li>
+          </ul> 
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="modal fade" id="kickFlipModal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="kickFlipModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel"> Advanced Level</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid imgCenter" src="difficult.png">
+          <ul>
+            <li>Delve into idiomatic expressions.</li>
+            <li>Activities can include advanced reading, writing essays or reports, and engaging in debates or presentations.</li>
+            <li>Participate in conversational groups about a specific topic.</li>
+          </ul> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+
+  <footer class="footer bg-inverse">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-lg-3">
+          <img class="img-fluid size footerImg" src="Logo DiscoverAndSpeak.png">
+        </div>
+        <div class="col-sm-12 col-lg-9 socialWrapper">
+          <a href="https://www.instagram.com/discoverandspeak/" target="_blank">
+          <i class="ri-instagram-line ri-2x"></i></a>
+          <a href="https://t.me/+pvNJKLQgQb03Mzdh" target="_blank">
+          <i class="ri-telegram-line ri-2x"></i></a>
+          <i class="ri-discord-line ri-2x"></i>
+          <i class="ri-youtube-line ri-2x"></i>
+          <i class="ri-facebook-circle-fill ri-2x"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
+
+
+
