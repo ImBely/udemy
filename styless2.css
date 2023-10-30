@@ -1,0 +1,98 @@
+* {
+    margin: 0; /*como es grid no podemos usar justify content center so we use margin auto to center the things.*/
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.container-grid {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(5, 1fr); /* Define your desired number of columns */
+    /*grid-template-rows: repeat(5, 1fr); */
+    grid-template-areas: /*aqui dibujas el tama;o que quieras*/
+        "item1 item1 item2 item3 item4 item4 item4"
+        "item1 item1 item2 item5 item6 item7 item7"
+        "item8 item9 item2 item5 item10 item11 item11"
+        "item8 item12 item2 item5 item13 item13 item13"
+        "item14 item14 item14 item14 item13 item13 item13"
+        "item14 item14 item14 item14 item13 item13 item13";  /* Define the grid layout using named areas */
+}
+
+.grid-item {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.grid-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Specify the size for each grid item using grid-template-areas */
+.item1 {
+    grid-area: item1; /* Place this item in the 'item1' area */
+    
+}
+
+.item2 {
+    grid-area: item2 ; /* Place this item in the 'item2' area */
+}
+
+.item3 {
+    grid-area: item3; 
+    
+}
+
+.item4 {
+    grid-area: item4; 
+}
+
+.item5 {
+    grid-area: item5; 
+}
+
+.item6 {
+    grid-area: item6; 
+}
+
+.item7 {
+    grid-area: item7; 
+}
+
+.item8 {
+    grid-area: item8; 
+}
+
+.item9 {
+    grid-area: item9; 
+}
+
+.item10 {
+    grid-area: item10; 
+}
+
+.item11 {
+    grid-area: item11; 
+}
+
+.item12 {
+    grid-area: item12; 
+}
+
+.item13 {
+    grid-area: item13; 
+}
+
+.item14 {
+    grid-area: item14; /* Place this item in the 'item14' area */
+}
