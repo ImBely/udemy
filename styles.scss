@@ -1,0 +1,79 @@
+//VARIABLES (CAN STORE A VALUE) A VARIABLE IS NOT A STYLE PROPERTIE SO IT WILL NOT REFLECT IN CSS.
+$brand-main:   #6600CC;
+$brand-sub:    #CC66FF;
+$brand-dark:  #333;
+$brand-light: #E6F2FF;
+
+//MIXINS If you intend to use the =shaping mixin globally or outside of a specific selector, you can place it within a root-level @mixin declaration block
+@mixin shaping($height, $width, $rad, $bg, $color){
+    height:                 $height;
+    width:                  $width;
+    -webkit-border-radius:  $rad;
+    -moz-border-radius:     $rad;
+    -ms-border-radius:      $rad;
+    border-radius:          $rad;
+    background-color:       $bg;
+    color:                  $color;
+}
+
+//en border width 0, border style none we make it in order to delete the standar configuration of the website. After creating mixin we need to use that.
+@mixin btn-main($padding, $rad, $bg, $color){
+    padding:                $padding;
+    border-radius:          $rad;
+    background-color:       $bg;
+    color:                  $color;
+    border-width:0; 
+    border-style: none;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    &:hover{
+    background-color: lighten($brand-main, 20%); //para transformar a mas clarito ese color}
+}
+}
+
+//styles
+
+body{
+    background-color: $brand-light;
+    }
+
+h1{
+    text-align: center;
+    padding-top: 20px;
+}
+
+section{
+    background: $brand-sub;
+    color: $brand-dark;
+    width: 780px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 7px;
+    position: relative; //para que aparezcan por detras las letras?
+    z-index: -2 // para apilar, posicionar encima o por debajo.
+}
+
+//We add things of the shaping here
+.thumb1{
+    @include shaping(120, 120px, 10%, $brand-dark, $brand-light);
+    margin: 0 435px -90px;
+}
+
+.thumb2{
+    @include shaping(100px, 100px, 50%, $brand-sub, $brand-sub); //we put x2 brand sub because if not there will be an error when compiling it.
+    margin: -50px 1310px;
+}
+
+.btn-1{
+    @include btn-main(15px 20px, 7px, $brand-main, white);
+}
+
+.btn-2{
+    @include btn-main(30px, 50%, $brand-dark, white);
+    font-size: 2rem;
+    &:hover{
+        background-color: darken($brand-main, 10%);
+    }
+}
+
